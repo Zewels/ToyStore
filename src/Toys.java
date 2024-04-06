@@ -1,5 +1,6 @@
 public class Toys
 {
+    public Object remove;
     int id; // Уникальный идентификатор игрушки
     String name; // Название игрушки
     double weight; // Вес игрушки
@@ -23,4 +24,12 @@ public class Toys
     {
         return weight;
     }
+
+    // Переопределение метода toString() для получения строкового представления объекта
+    @Override
+    public String toString()
+    {
+        return "Toys [id =" + id + ", name = " + name + ", weight = " + weight + "]";
+    }
+
 }
